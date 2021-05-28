@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-title>Excluir Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="client.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF" [(ngModel)]="client.cpf" name="client" disabled>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Cidade</mat-label>
+            <input matInput placeholder="Ex. Rio de Janeiro" [(ngModel)]="client.cidade" name="cidade" disabled>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>UF:</mat-label>
+            <input matInput placeholder="Ex. RJ" [(ngModel)]="client.uf" name="uf" disabled>
+        </mat-form-field>
+
+    </form>
+    <button mat-raised-button (click)="deleteClient()" color="warn">
+        Excluir
+    </button>
+s
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
